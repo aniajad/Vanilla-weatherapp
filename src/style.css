@@ -1,7 +1,8 @@
 body {
   font-family: "Montserrat", sans-serif;
   text-decoration: none;
-  background-image: url("src/sky.jpg");
+  background-image: url("src/sky.jpg") no-repeat center center fixed;
+  background-size: cover;
 }
 
 h1 {
