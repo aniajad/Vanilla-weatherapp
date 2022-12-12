@@ -1,7 +1,7 @@
 body {
   font-family: "Montserrat", sans-serif;
   text-decoration: none;
-  background-image: url("src/sky.jpg") no-repeat center center fixed;
+  background-image: url("Vanilla-weatherapp/src/sky.jpg");
   background-size: cover;
 }
 
@@ -74,4 +74,17 @@ strong {
 }
 .active:hover {
   text-decoration: none;
+}
+
+.weather-forecast {
+  margin-top: 20px;
+  text-align: center;
+  color: #dadde1;
+}
+
+.weather-forecast-date {
+  font-size: 16px;
+}
+.weather-forecast-temperatures {
+  font-size: 13px;
 }
