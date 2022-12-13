@@ -29,14 +29,8 @@ function formatDay(timestamp) {
   return days[day];
 }
 
-function getForecast(coordinates) {
-  let apiKey = "d6adb6d48b0afcb13103tf940oab4e26";
-  let apiURL = `https://api.shecodes.io/weather/v1/forecast?lon=${coordinates.longitude}&lat=${coordinates.latitude}&key=${apiKey}&units=metric`;
-
-  axios.get(apiURL).then(displayForecast);
-}
-
-function displayForecast() {
+function displayForecast(response) {
+  console.log(response.data.daily);
   let forecastElement = document.querySelector("#forecast");
 
   let forecastHTML = `<div class="row">`;
@@ -64,6 +58,13 @@ function displayForecast() {
 
   forecastHTML = forecastHTML + `</div>`;
   forecastElement.innerHTML = forecastHTML;
+}
+
+function getForecast(coordinates) {
+  let apiKey = "d6adb6d48b0afcb13103tf940oab4e26";
+  let apiURL = `https://api.shecodes.io/weather/v1/forecast?lon=${coordinates.longitude}&lat=${coordinates.latitude}&key=${apiKey}&units=metric`;
+
+  axios.get(apiURL).then(displayForecast);
 }
 
 function displayTemperature(response) {
@@ -144,4 +145,3 @@ let celsiusLink = document.querySelector("#celsius-link");
 celsiusLink.addEventListener("click", displayCelsiusTemperature);
 
 search("Berlin");
-displayForecast();
