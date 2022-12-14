@@ -138,6 +138,9 @@ function retrievePosition(position) {
 
 navigator.geolocation.getCurrentPosition(retrievePosition);
 
+let currentCityButton = document.querySelector("#current-city");
+currentCityButton.addEventListener("click", displayTemperature);
+
 let celsiusTemperature = null;
 
 let form = document.querySelector("#search-form");

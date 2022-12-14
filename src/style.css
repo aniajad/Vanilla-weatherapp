@@ -1,3 +1,7 @@
+a {
+  text-decoration: none;
+}
+
 body {
   font-family: "Montserrat", sans-serif;
   text-decoration: none;
@@ -87,4 +91,10 @@ strong {
 }
 .weather-forecast-temperatures {
   font-size: 13px;
+}
+.weather-forecast-temperature-max {
+  font-weight: 600;
+}
+.footer {
+  color: #dadde1;
 }
