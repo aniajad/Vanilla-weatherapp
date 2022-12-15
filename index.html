@@ -34,7 +34,7 @@
               <div class="col-3">
                 <input
                   class="btn btn-primary"
-                  type="reset"
+                  type="button"
                   value="Current city"
                   id="current-city"
                 />
@@ -72,13 +72,11 @@
                   id="icon"
                 />
                 <strong id="temperature"></strong>
-                <span class="units">
-                  <a href="#" id="celsius-link" class="active">°C</a> |
-                  <a href="#" id="fahrenheit-link">°F</a>
-                </span>
+                <span class="units"> °C </span>
               </div>
               <div class="col-6">
                 <ul>
+                  <li>Feels like: <span id="feels-like"></span>°C</li>
                   <li>Humidity: <span id="humidity"></span>%</li>
                   <li>Wind: <span id="wind"></span> km/h</li>
                 </ul>
