@@ -136,10 +136,12 @@ function retrievePosition(position) {
   axios.get(url).then(displayTemperature);
 }
 
-navigator.geolocation.getCurrentPosition(retrievePosition);
+function getCurrentCity() {
+  navigator.geolocation.getCurrentPosition(retrievePosition);
+}
 
 let currentCityButton = document.querySelector("#current-city");
-currentCityButton.addEventListener("click", displayTemperature);
+currentCityButton.addEventListener("click", getCurrentCity);
 
 let celsiusTemperature = null;
 
