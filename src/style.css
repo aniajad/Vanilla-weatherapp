@@ -6,7 +6,7 @@ body {
   font-family: "Montserrat", sans-serif;
   text-decoration: none;
   background-image: url("sky.jpg");
-  background-size: cover;
+  background-size: auto;
 }
 
 h1 {
@@ -19,7 +19,7 @@ h1 {
 
 ul {
   margin: 0;
-  padding: 5px;
+  padding-top: 15px;
 
   color: #272343;
 }
@@ -38,6 +38,9 @@ li:first-letter {
   text-transform: capitalize;
 }
 
+img {
+  padding-bottom: 20px;
+}
 strong {
   color: rgb(35, 35, 35);
   font-size: 64px;
